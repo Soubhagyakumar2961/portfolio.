@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Soubhagya Kumar Badatya, a 2nd-year Computer Science student passionate about software development and problem-solving.">
+  <meta name="keywords" content="portfolio, computer science, engineering student, software development, Python, web development">
+  <meta name="author" content="Soubhagya Kumar Badatya">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #000000, #03173f);
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      text-align: left;
+    }
+
+    .header-left h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .header-left p {
+      margin: 5px 0 0;
+      font-size: 1rem;
+    }
+
+    .header-right img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 4px solid white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #03173f;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 2px 5px 10px rgba(14, 13, 13, 0.34);
+    }
+
+    h2 {
+      color: #055465;
+    }
+
+    .project, .certification, .achievement {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      position: relative;
+      width: 100%;
+      bottom: 0;
+    }
+
+    
+    body.dark-mode {
+      background-color: #333;
+      color: #f4f4f4;
+    }
+
+    body.dark-mode header {
+      background-color: #03173f;
+      color: white;
+    }
+
+    body.dark-mode section {
+      background-color: #444;
+      color: #f4f4f4;
+    }
+
+    body.dark-mode nav {
+      background-color: #222;
+    }
+
+    body.dark-mode nav a {
+      color: #f4f4f4;
+    }
+
+    body.dark-mode footer {
+      background-color: #222;
+      color: #f4f4f4;
+    }
+
+    
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header-right img {
+        margin-top: 10px;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        padding: 10px;
+      }
+
+      section {
+        margin: 10px;
+        padding: 15px;
+      }
+
+      .header-left h1 {
+        font-size: 1.5rem;
+      }
+
+      .header-left p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header-left h1 {
+        font-size: 1.2rem;
+      }
+
+      .header-left p {
+        font-size: 0.8rem;
+      }
+
+      nav a {
+        padding: 8px;
+      }
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+
+    section:hover {
+      transform: scale(1.02);
+      transition: transform 0.3s ease;
+    }
+    
+    #theme-toggle {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    #theme-toggle:hover {
+      background-color: #005bb5;
+    }
+
+    body.dark-mode #theme-toggle {
+      background-color: #055465;
+      color: white;
+    }
+
+    body.dark-mode #theme-toggle:hover {
+      background-color: #033d4d;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <header>
+    <div class="header-left">
+      <h1>Soubhagya Kumar Badatya</h1>
+      <p>2nd-Year Engineering Student | Computer Science</p>
+    </div>
+    <div class="header-right">
+      <img src="soubha.png" alt="Soubhagya Kumar Badatya">
+    </div>
+  </header>
+
+ 
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-toggle">Dark Mode</button>
+  </nav>
+
+  
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Soubhagya Kumar Badatya, a 2nd-year Computer Science student passionate about building innovative software solutions.
+      I specialize in Python, web development, and problem-solving. My goal is to contribute to the tech industry by creating
+      impactful solutions that solve real-world problems. When I'm not coding, I enjoy participating in hackathons and exploring
+      new technologies.
+    </p>
+  </section>
+
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Technical:</strong> Python, C, Java, HTML/CSS, Git</li>
+      <li><strong>Soft Skills:</strong> Teamwork, Communication, Problem-Solving</li>
+    </ul>
+  </section>
+
+ 
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Physics Review</h3>
+      <p>
+        Designed a physics-based system that helps students collect and review notes, improving study efficiency by 30%.
+      </p>
+      <p><strong>Tools:</strong> HTML, CSS, Django</p>
+    </div>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>
+        Created a responsive portfolio website using HTML, CSS, and JavaScript.
+      </p>
+      <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certification">
+      <p><strong>Learning to Artificial Intelligence</strong> – Edu-varsity</p>
+      <p><strong>Joy of Using Computing with Python</strong> – Udemy</p>
+    </div>
+  </section>
+
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="achievement">
+      <p>Coming soon Degree</p>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: soubhagyakumar2961@gmail.com</p>
+    <p>LinkedIn: <a href="https://in.linkedin.com/in/soubhagya-kumar-badatya-285960319" target="_blank">linkedin.com/in/soubhagyakumar</a></p>
+    <p>GitHub: <a href="https://github.com/Soubhagyakumar2961" target="_blank">github.com/soubhagyakumar</a></p>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Soubhagya. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+    });
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  </script>
+</body>
+</html>
